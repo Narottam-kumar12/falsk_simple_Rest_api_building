@@ -8,7 +8,7 @@ class user_model():
             self.con = mysql.connector.connect(
                 host="localhost",
                 user="root",
-                password="NewPassword123",
+                password="******123**",
                 database="Flask_tutorial"
             )
             self.con.autocommit = True
@@ -135,5 +135,5 @@ class user_model():
             }, 200)
 
       except Exception as e:
-          return make_response({"error": str(e)}, 400)
+        return make_response({"error": str(e)}, 400)
 
